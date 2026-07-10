@@ -3,32 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>RYO AI</title>
 
-<style>
-body{
-    background:#111827;
-    color:white;
-    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-    margin:0;
-    padding:20px;
-}
-
-h1{
-    text-align:center;
-}
-
-.card{
-    background:#1f2937;
-    padding:16px;
-    margin:16px 0;
-    border-radius:12px;
-}
-
-h2{
-    margin-top:0;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -36,35 +14,23 @@ h2{
 
 <h1>🤖 RYO AI</h1>
 
-<div class="card">
+<button onclick="loadNews()">
+🔄 更新
+</button>
+
+<p id="updated">
+最終更新 -
+</p>
+
+<hr>
+
 <h2>📝 今日の3行まとめ</h2>
-<p>ここにAIが毎朝まとめを表示します。</p>
+
+<div id="summary">
+読み込み中...
 </div>
 
-<div class="card">
-<h2>🔥 重要ニュース</h2>
-<p>まだニュースはありません。</p>
-</div>
-
-<div class="card">
-<h2>🤖 AIニュース</h2>
-<p>まだニュースはありません。</p>
-</div>
-
-<div class="card">
-<h2>🀄 雀荘ニュース</h2>
-<p>まだニュースはありません。</p>
-</div>
-
-<div class="card">
-<h2>🎰 スロット</h2>
-<p>まだニュースはありません。</p>
-</div>
-
-<div class="card">
-<h2>⭐ AIおすすめ</h2>
-<p>まだおすすめはありません。</p>
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
