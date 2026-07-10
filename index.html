@@ -3,32 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>RYO AI</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<h1>🤖 RYO AI</h1>
+<header>
+    <h1>🤖 RYO AI</h1>
+    <p id="greeting">おはよう、亮。</p>
 
-<button onclick="loadNews()">
-🔄 更新
-</button>
+    <div class="topbar">
+        <button id="refreshButton">🔄 更新</button>
+        <span id="lastUpdate">最終更新 --:--</span>
+    </div>
+</header>
 
-<p id="updated">
-最終更新 -
-</p>
+<main>
 
-<hr>
-
+<section class="card">
 <h2>📝 今日の3行まとめ</h2>
-
 <div id="summary">
 読み込み中...
 </div>
+</section>
+
+<section class="card">
+<h2>🔥 重要ニュース</h2>
+<div id="important"></div>
+</section>
+
+<section class="card">
+<h2>🤖 AIニュース</h2>
+<div id="ai"></div>
+</section>
+
+<section class="card">
+<h2>🀄 雀荘ニュース</h2>
+<div id="mahjong"></div>
+</section>
+
+<section class="card">
+<h2>🎰 スロット</h2>
+<div id="slot"></div>
+</section>
+
+<section class="card">
+<h2>⭐ AIおすすめ</h2>
+<div id="recommend"></div>
+</section>
+
+</main>
 
 <script src="script.js"></script>
 
