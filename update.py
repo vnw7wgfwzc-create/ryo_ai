@@ -1,8 +1,19 @@
-from config import AI_NEWS
-from sources import get_news
+name: RYO AI Update
 
-for url in AI_NEWS:
+on:
+  workflow_dispatch:
 
-    news=get_news(url)
+jobs:
+  update:
+    runs-on: ubuntu-latest
 
-    print(news)
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - run: python update.py
